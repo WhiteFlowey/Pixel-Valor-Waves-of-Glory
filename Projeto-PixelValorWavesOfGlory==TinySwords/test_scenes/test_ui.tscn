@@ -1,0 +1,42 @@
+[gd_scene load_steps=10 format=3 uid="uid://bv5xpxp1vrvdn"]
+
+[ext_resource type="PackedScene" uid="uid://i7agfb8rmj1i" path="res://Player/player.tscn" id="1_w8xju"]
+[ext_resource type="PackedScene" uid="uid://cnkatvtfu22ub" path="res://ui/game_ui.tscn" id="2_ck1wb"]
+[ext_resource type="PackedScene" uid="uid://ta4bcn25ktgw" path="res://enemies/behavious/goblin.tscn" id="3_mopaw"]
+[ext_resource type="PackedScene" uid="uid://cp7vb174vglri" path="res://enemies/behavious/sheep.tscn" id="4_mpbsv"]
+[ext_resource type="PackedScene" uid="uid://0v6tpyfw8qrp" path="res://enemies/behavious/Skelleton.tscn" id="5_3jpbh"]
+[ext_resource type="PackedScene" uid="uid://cack7t7xscbv8" path="res://enemies/behavious/Pawn.tscn" id="5_mrcwo"]
+[ext_resource type="PackedScene" uid="uid://yqgulgh6nya" path="res://enemies/behavious/Wolf.tscn" id="6_tq4pt"]
+[ext_resource type="PackedScene" uid="uid://dickc0olodcu5" path="res://enemies/behavious/Zombie.tscn" id="8_72v41"]
+[ext_resource type="PackedScene" uid="uid://c8ddimo1qmop2" path="res://misc/meat.tscn" id="9_q60k2"]
+
+[node name="TestUi" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_w8xju")]
+position = Vector2(553, 337)
+
+[node name="GameUI" parent="." instance=ExtResource("2_ck1wb")]
+
+[node name="Globin" parent="." instance=ExtResource("3_mopaw")]
+position = Vector2(108, 224)
+
+[node name="Sheep" parent="." instance=ExtResource("4_mpbsv")]
+position = Vector2(-188, 372)
+
+[node name="Pawn" parent="." instance=ExtResource("5_mrcwo")]
+position = Vector2(213, 791)
+
+[node name="Skelleton" parent="." instance=ExtResource("5_3jpbh")]
+position = Vector2(351, 770)
+
+[node name="Wolf" parent="." instance=ExtResource("6_tq4pt")]
+position = Vector2(557, 802)
+
+[node name="Zombie" parent="." instance=ExtResource("8_72v41")]
+position = Vector2(34, 770)
+
+[node name="Meat" parent="." instance=ExtResource("9_q60k2")]
+position = Vector2(168, 539)
+
+[node name="Meat2" parent="." instance=ExtResource("9_q60k2")]
+position = Vector2(910, 528)

@@ -1,0 +1,39 @@
+[gd_scene load_steps=9 format=3 uid="uid://3sr0sivys1pv"]
+
+[ext_resource type="PackedScene" uid="uid://i7agfb8rmj1i" path="res://Player/player.tscn" id="1_dklfx"]
+[ext_resource type="PackedScene" uid="uid://cack7t7xscbv8" path="res://enemies/behavious/Pawn.tscn" id="2_4sw0y"]
+[ext_resource type="PackedScene" uid="uid://ta4bcn25ktgw" path="res://enemies/behavious/goblin.tscn" id="3_abfvl"]
+[ext_resource type="PackedScene" uid="uid://cp7vb174vglri" path="res://enemies/behavious/sheep.tscn" id="4_8yn0t"]
+[ext_resource type="PackedScene" uid="uid://yqgulgh6nya" path="res://enemies/behavious/Wolf.tscn" id="5_da0ua"]
+[ext_resource type="PackedScene" uid="uid://dickc0olodcu5" path="res://enemies/behavious/Zombie.tscn" id="6_d2hmo"]
+[ext_resource type="PackedScene" uid="uid://0v6tpyfw8qrp" path="res://enemies/behavious/Skelleton.tscn" id="7_cehfc"]
+[ext_resource type="PackedScene" uid="uid://dw4ytxh253ppi" path="res://misc/ritual.tscn" id="8_btnns"]
+
+[node name="TestBattle" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_dklfx")]
+position = Vector2(526, 386)
+
+[node name="Pawn2" parent="." instance=ExtResource("3_abfvl")]
+position = Vector2(-238, 392)
+
+[node name="Pawn3" parent="." instance=ExtResource("2_4sw0y")]
+position = Vector2(-732, 617)
+
+[node name="Pawn4" parent="." instance=ExtResource("4_8yn0t")]
+position = Vector2(1963, 409)
+
+[node name="Pawn5" parent="." instance=ExtResource("4_8yn0t")]
+position = Vector2(2005, 198)
+
+[node name="Pawn6" parent="." instance=ExtResource("5_da0ua")]
+position = Vector2(1169, -70.9999)
+
+[node name="Pawn7" parent="." instance=ExtResource("6_d2hmo")]
+position = Vector2(677, -151)
+
+[node name="Zombie" parent="." instance=ExtResource("7_cehfc")]
+position = Vector2(468, -146)
+
+[node name="Ritual" parent="." instance=ExtResource("8_btnns")]
+position = Vector2(531, 352)
